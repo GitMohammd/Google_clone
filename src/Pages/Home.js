@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import AppsIcon from "@mui/icons-material/Apps";
 import { Avatar } from '@mui/material';
+import Search from './Search';
 
 const Home = () => {
     return (
@@ -19,7 +20,15 @@ const Home = () => {
             <Avatar />
           </div>
         </div>
-        <div className="home_body"></div>
+        <div className="home_body">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt=""
+          />
+          <div className="home_inputContainer">
+            <Search />
+          </div>
+        </div>
       </div>
     );
 };
